@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "LangCursor",
+	"description": "LangCursor",
+	"version": "1.0",
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"permissions": ["scripting", "storage"],
+	"host_permissions": ["<all_urls>"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["dist/toUpperCase.js"]
+		}
+	]
+}
